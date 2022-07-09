@@ -54,5 +54,6 @@
 		"git": "latest",
 		"github-cli": "latest",
 		"homebrew": "latest"
-	}
+	},
+	"postStartCommand": ["./mvnw", "clean", "install", "-DskipTests"]
 }
