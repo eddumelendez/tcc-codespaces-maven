@@ -41,8 +41,9 @@
 			"version": "none",
 			"installMaven": "false",
 			"installGradle": "false"
-		},
-		"ghcr.io/devcontainers/features/docker-from-docker:1": {}
+		}
 	},
-	"postStartCommand": ["./mvnw", "clean", "package", "-DskipTests"]	
+	"postCreateCommand": "./.devcontainer/tcc.sh",
+	"postAttachCommand": "./.devcontainer/start.sh",
+	"postStartCommand": "./mvnw clean package -DskipTests"
 }
