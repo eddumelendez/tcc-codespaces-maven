@@ -44,6 +44,6 @@
 		}
 	},
 	"postCreateCommand": "./.devcontainer/tcc.sh",
-	"postAttachCommand": "./.devcontainer/start.sh",
+    "postAttachCommand": "./agent &",
 	"postStartCommand": "./mvnw clean package -DskipTests"
 }
