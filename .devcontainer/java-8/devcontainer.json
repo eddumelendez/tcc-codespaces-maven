@@ -52,6 +52,5 @@
             "installGradle": "false"
         },
 		"ghcr.io/eddumelendez/test-devcontainer/tcc:0": {}
-	},
-	"postStartCommand": ["./mvnw", "clean", "package", "-DskipTests"]
+	}
 }
